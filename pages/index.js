@@ -1,3 +1,4 @@
+import Layout from "../components/layout/Layout";
 import MeetupList from "../components/meetups/MeetupList";
 
 const data = [
@@ -25,7 +26,9 @@ const data = [
 function HomePage() {
     return (
         <div>
-            <MeetupList meetups={data} />
+            <Layout>
+                <MeetupList meetups={data} />
+            </Layout>
         </div>
     )
 }
